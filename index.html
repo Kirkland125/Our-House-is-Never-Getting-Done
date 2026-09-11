@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home Countdown</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            🏠 <span>Impatiently Waiting on KB Homes</span>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Construction in progress
+        </div>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <img src="House.JPG" alt="Our beautiful house" class="hero-image">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    Our New Home
+                </span>
+
+                <h1>
+                    The countdown<br>
+                    is on.
+                </h1>
+
+                <p class="address">
+                    2000 Vitus Lane, Titusville, FL
+                </p>
+
+                <p class="description">
+                    Counting down to the alledged date of completion
+                    of our new home....
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- COUNTDOWN -->
+        <section class="countdown-section">
+
+            <div class="countdown-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <span class="small-label">
+                            "ALLEDGED" COMPLETION
+                        </span>
+
+                        <h2>
+                            October 26, 2026
+                        </h2>
+                    </div>
+
+                    <div class="calendar-icon">
+                        📅
+                    </div>
+
+                </div>
+
+
+                <div class="countdown">
+
+                    <div class="time">
+                        <div class="number" id="days">0</div>
+                        <div class="label">DAYS</div>
+                    </div>
+
+                    <div class="colon">:</div>
+
+                    <div class="time">
+                        <div class="number" id="hours">0</div>
+                        <div class="label">HOURS</div>
+                    </div>
+
+                    <div class="colon">:</div>
+
+                    <div class="time">
+                        <div class="number" id="minutes">0</div>
+                        <div class="label">MINUTES</div>
+                    </div>
+
+                    <div class="colon">:</div>
+
+                    <div class="time">
+                        <div class="number" id="seconds">0</div>
+                        <div class="label">SECONDS</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WEATHER -->
+        <section class="weather-section">
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    CONSTRUCTION CONDITIONS
+                </span>
+
+                <h2>
+                    Current weather forecast
+                </h2>
+
+            </div>
+
+            <div class="weather-container">
+
+                <div class="weather-current">
+                    <div class="weather-icon" id="weatherIcon">🌤️</div>
+                    <div class="weather-info">
+                        <div class="temperature" id="temperature">--°F</div>
+                        <div class="condition" id="condition">Loading...</div>
+                        <div class="location">Titusville, FL</div>
+                    </div>
+                </div>
+
+                <div class="weather-forecast" id="weatherForecast">
+                    <!-- Forecast will be inserted here -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+        <section class="progress-section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="small-label">
+                        BUILD PROGRESS
+                    </span>
+
+                    <h2>
+                        Our Home's Progress
+                    </h2>
+                </div>
+
+                <strong id="progressText">0%</strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressBar">
+                </div>
+
+            </div>
+
+            <p class="progress-note">
+                Estimated progress based on your construction timeline.
+            </p>
+
+        </section>
+
+
+        <!-- MILESTONES -->
+        <section class="milestones">
+
+            <div class="section-heading">
+
+                <span class="small-label">
+                    CONSTRUCTION
+                </span>
+
+                <h2>
+                    Home milestones
+                </h2>
+
+            </div>
+
+
+            <div class="milestone-grid">
+
+                <div class="milestone complete">
+                    <div class="milestone-icon">✓</div>
+
+                    <div>
+                        <h3>Planning</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+
+                <div class="milestone complete">
+                    <div class="milestone-icon">✓</div>
+
+                    <div>
+                        <h3>Foundation</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+
+                <div class="milestone active">
+                    <div class="milestone-icon">●</div>
+
+                    <div>
+                        <h3>Slab Completion</h3>
+                        <p>In progress</p>
+                    </div>
+                </div>
+
+
+                <div class="milestone">
+                    <div class="milestone-icon">○</div>
+
+                    <div>
+                        <h3>Drywall Completion</h3>
+                        <p>Upcoming</p>
+                    </div>
+                </div>
+
+
+                <div class="milestone">
+                    <div class="milestone-icon">○</div>
+
+                    <div>
+                        <h3>Final Inspection</h3>
+                        <p>Upcoming</p>
+                    </div>
+                </div>
+
+
+                <div class="milestone">
+                    <div class="milestone-icon">○</div>
+
+                    <div>
+                        <h3>Home Completion</h3>
+                        <p>October 26, 2026</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            Hurry up, we are impatiently waiting to move in!
+        </p>
+
+        <p>
+            Last updated: <span id="currentDate"></span>
+        </p>
+
+    </footer>
+
+
+    <!-- COUNTDOWN SCRIPT -->
+    <script>
+
+        // ==========================================
+        // HOUSE COMPLETION DATE
+        // ==========================================
+
+        const completionDate =
+            new Date("October 26, 2026 17:00:00").getTime();
+
+
+        // ==========================================
+        // BUILD PROGRESS
+        // Calculated based on completed milestones
+        // ==========================================
+
+        function calculateProgress() {
+            const completedMilestones = document.querySelectorAll('.milestone.complete').length;
+            const totalMilestones = document.querySelectorAll('.milestone').length;
+            return Math.round((completedMilestones / totalMilestones) * 100);
+        }
+
+        const buildProgress = calculateProgress();
+
+
+        // ==========================================
+        // COUNTDOWN
+        // ==========================================
+
+        function updateCountdown() {
+
+            const now = new Date().getTime();
+
+            const difference =
+                completionDate - now;
+
+
+            if (difference <= 0) {
+
+                document.getElementById("days").textContent = "0";
+                document.getElementById("hours").textContent = "0";
+                document.getElementById("minutes").textContent = "0";
+                document.getElementById("seconds").textContent = "0";
+
+                return;
+            }
+
+
+            const days =
+                Math.floor(
+                    difference /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+            const hours =
+                Math.floor(
+                    (difference /
+                    (1000 * 60 * 60)) % 24
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (difference /
+                    (1000 * 60)) % 60
+                );
+
+
+            const seconds =
+                Math.floor(
+                    (difference / 1000) % 60
+                );
+
+
+            document.getElementById("days")
+                .textContent = days;
+
+
+            document.getElementById("hours")
+                .textContent =
+                String(hours).padStart(2, "0");
+
+
+            document.getElementById("minutes")
+                .textContent =
+                String(minutes).padStart(2, "0");
+
+
+            document.getElementById("seconds")
+                .textContent =
+                String(seconds).padStart(2, "0");
+        }
+
+
+        // ==========================================
+        // PROGRESS BAR
+        // ==========================================
+
+        document.getElementById("progressBar")
+            .style.width = buildProgress + "%";
+
+
+        document.getElementById("progressText")
+            .textContent = buildProgress + "%";
+
+
+        // ==========================================
+        // CURRENT DATE
+        // ==========================================
+
+        document.getElementById("currentDate")
+            .textContent =
+            new Date().toLocaleDateString();
+
+
+        // Start countdown
+        updateCountdown();
+
+        setInterval(updateCountdown, 1000);
+
+
+        // ==========================================
+        // WEATHER API
+        // ==========================================
+
+        const WEATHER_API = "https://api.open-meteo.com/v1/forecast";
+        const LATITUDE = 28.5921;
+        const LONGITUDE = -80.8064;
+
+        const weatherIcons = {
+            "Sunny": "☀️",
+            "Clear": "🌙",
+            "Partly cloudy": "⛅",
+            "Overcast": "☁️",
+            "Drizzle": "🌦️",
+            "Rain": "🌧️",
+            "Heavy rain": "⛈️",
+            "Thunderstorm": "⛈️",
+            "Snow": "❄️",
+            "Fog": "🌫️"
+        };
+
+        async function fetchWeather() {
+            try {
+                const response = await fetch(
+                    `${WEATHER_API}?latitude=${LATITUDE}&longitude=${LONGITUDE}&current=temperature_2m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&timezone=auto`
+                );
+                const data = await response.json();
+
+                // Current weather
+                const current = data.current;
+                const temp = Math.round(current.temperature_2m);
+                const weatherCode = current.weather_code;
+                const condition = getWeatherDescription(weatherCode);
+                const icon = getWeatherIcon(condition);
+
+                document.getElementById("temperature").textContent = temp + "°F";
+                document.getElementById("condition").textContent = condition;
+                document.getElementById("weatherIcon").textContent = icon;
+
+                // Forecast
+                const daily = data.daily;
+                const forecastHTML = daily.time.slice(1, 6).map((date, index) => {
+                    const maxTemp = Math.round(daily.temperature_2m_max[index + 1]);
+                    const minTemp = Math.round(daily.temperature_2m_min[index + 1]);
+                    const code = daily.weather_code[index + 1];
+                    const desc = getWeatherDescription(code);
+                    const icon = getWeatherIcon(desc);
+                    const dayName = new Date(date).toLocaleDateString('en-US', { weekday: 'short' });
+
+                    return `
+                        <div class="forecast-day">
+                            <div class="day-name">${dayName}</div>
+                            <div class="day-icon">${icon}</div>
+                            <div class="day-temp">${maxTemp}°</div>
+                            <div class="day-condition">${desc}</div>
+                        </div>
+                    `;
+                }).join('');
+
+                document.getElementById("weatherForecast").innerHTML = forecastHTML;
+            } catch (error) {
+                console.error("Weather fetch error:", error);
+                document.getElementById("condition").textContent = "Unable to load weather";
+            }
+        }
+
+        function getWeatherDescription(code) {
+            // WMO Weather interpretation codes
+            if (code === 0) return "Sunny";
+            if (code === 1 || code === 2) return "Partly cloudy";
+            if (code === 3) return "Overcast";
+            if (code === 45 || code === 48) return "Fog";
+            if (code === 51 || code === 53 || code === 55) return "Drizzle";
+            if (code === 61 || code === 63 || code === 65) return "Rain";
+            if (code === 71 || code === 73 || code === 75) return "Snow";
+            if (code === 80 || code === 81 || code === 82) return "Heavy rain";
+            if (code === 85 || code === 86) return "Snow showers";
+            if (code === 95 || code === 96 || code === 99) return "Thunderstorm";
+            return "Check weather";
+        }
+
+        function getWeatherIcon(condition) {
+            const lowerCondition = condition.toLowerCase();
+            for (const [key, icon] of Object.entries(weatherIcons)) {
+                if (lowerCondition.includes(key.toLowerCase())) {
+                    return icon;
+                }
+            }
+            return "🌤️";
+        }
+
+        // Fetch weather on page load and refresh every 30 minutes
+        fetchWeather();
+        setInterval(fetchWeather, 30 * 60 * 1000);
+
+    </script>
+
+</body>
+</html>
